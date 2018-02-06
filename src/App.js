@@ -17,7 +17,7 @@ class App extends Component {
     
     componentDidMount(){
         //console.log(this.refs.thedisplay.id);
-        this.socket = mySocket("http://142.232.125.240:10000");
+        this.socket = mySocket("https://advdyn2.herokuapp.com/");
         this.socket.on("createimage", (data)=>{
             this.setState({
                 allusers:data
